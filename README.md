@@ -63,7 +63,7 @@ type FormProps = {
 
 Instead of defining types within a function declaration, the majority of Nitro uses [type aliases](https://flow.org/en/docs/types/aliases/). This just means we store a complex type by name, in PascalCase, so it can be reused. It also means we can use an alias as a `Type` itself, as we see with `Agreement` in `AgreementAcceptance`.
 
-The majority of the types above are primitive types, such as boolean, string and number. `AgreementAcceptance`'s `updatedAt` property actually specifies `String` with a capital `S`. There is no difference between `string` and `String`. Flow will accept lowercase or uppercase primitives.
+The majority of the types above are primitive types, such as boolean, string and number.
 
 In `Agreement`, we see a [union type](https://flow.org/en/docs/types/unions/) for its `acknowledgementType` property. And instead of accepting different primitive types, it accepts [literal types](https://flow.org/en/docs/types/literals/) of `'signature'` or `'checkbox'`.
 
